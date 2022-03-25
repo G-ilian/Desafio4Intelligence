@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Aqui são definidos quais os aplicativos estarão instalados na minha API
 # Instalado Django Framework
+#Instalado o app Fornecedores(Este serve para fazer o desafio - CRUD)
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'Fornecedores',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
