@@ -15,3 +15,62 @@
 - Listar fornecedores.
 - Atualizar dados de fornecedores.
 - Deletar fornecedores.
+
+### 🚀 Começando
+Para obter uma cópia do projeto a fim de operá-lo/testá-lo em sua máquina,clone o repositório em uma pasta na sua máquina:
+```
+$ git clone https://github.com/G-ilian/Desafio4Intelligence
+```
+### 📋 Pré-requisitos para execução
+- IDE para execução de códigos Python (ex: Visual Studio Code,PyCharm)
+- Django
+- Django Rest Framework
+
+### 🔧 Instalação e execução
+-Venv 
+<p>Para uma melhor experiência ao executar a aplicação é recomendado a criação de um ambiente virtual (venv), que possibilitará isolar a aplicação e sua execução do nosso sistema operacional</p>
+<p>Para a criação e ativação da venv siga os seguintes comandos: </p>
+- Criação
+Obs: O nome da venv deve estar fora das aspas duplas 
+```
+python -m venv "Nome da venv que você deseja criar"
+```
+- Ativação
+Para windows(Lembrar sempre de verificar se está na raiz do projeto):
+1º Passo
+```
+$ cd venv
+```
+2º Passo
+```
+$ cd Scripts
+```
+3º passo
+```
+$ activate
+```
+
+<p>
+Posteriormente a esta ativação da venv volte até a pasta de origem de nome 'Desagio_Backend_4Intelligence'.Será necessário para isso executar o seguinte código por duas vezes:
+</p>
+```
+$ cd ..
+```
+
+- Linux ou MacOS
+```
+$ source tutorial-env/bin/activate
+```
+
+<p>Estando no diretório backEnd, insira o seguinte comando para instalar as bibliotecas:</p>
+
+```
+npm install
+```
+
+**Execução:**
+<p>Depois de instalar as bibliotecas,  execute o comando a seguir para subir o backEnd>:</p>
+
+```
+npm start
+```
