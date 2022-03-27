@@ -61,16 +61,12 @@ $ cd ..
 ```
 $ source tutorial-env/bin/activate
 ```
-
-<p>Estando no diretório backEnd, insira o seguinte comando para instalar as bibliotecas:</p>
-
+**Preparação**
+<p>Após termos feito a configuração e ativado nosso ambiente virtural, podemos então partir para a preparação para a execução do código</p>
+<p>Para isto é necessário fazer a instalação do pré requisitos que permitem a execução, esta instalação pode ser feita através do comando no terminal</p>
 ```
-npm install
+$ pip install -r requirements.txt
 ```
 
 **Execução:**
-<p>Depois de instalar as bibliotecas,  execute o comando a seguir para subir o backEnd>:</p>
-
-```
-npm start
-```
+<p></p>
