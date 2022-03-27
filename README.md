@@ -78,7 +78,7 @@ $ source tutorial-env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-**Execução:**
+### ⚙️ Executando os testes
 
 <p>Após ter instalado todos os pré requisitos, podemos partir para a execução da API, para isto será necessário executar alguns comandos pelo terminal, estando na pasta raiz do projeto execute os seguinter códigos </p>
 
@@ -106,28 +106,29 @@ $ python manage.py runserver
 <p>A Web API desenvolvida tem como principal funcionalidade fazer um CRUD completo, para isto foram criados 4 endpoints, para cada uma dessas operações, estes podem ser acessados através das seguintes urls.</p>
 
 :round_pushpin: Create
-Através deste metódo é possível criar um fornecedor, após a criação do mesmo bastar dar um POST, que ele já será incluído.
+<p>Através deste metódo é possível criar um fornecedor, após a criação do mesmo bastar dar um POST, que ele já será incluído.</p>
 
 ```
 $ 127.0.0.1:8000/create
 ```
 
 :round_pushpin: Read
-Através deste metódo é possível listar todos os fornecedores que estão cadastrados.
+<p>Através deste metódo é possível listar todos os fornecedores que estão cadastrados.</p>
 
 ```
 $ 127.0.0.1:8000/read
 ```
 
 :round_pushpin: Update
-Através deste metódo é possível fazer a atualização de todos os campos, ou de somente um campo de um fornecedor. Lembrando que este metódo exige a presença do id do fornecedor específico do qual você deseja atualizar os dados.
+<p>Através deste metódo é possível fazer a atualização de todos os campos, ou de somente um campo de um fornecedor. Lembrando que este metódo exige a presença do id do fornecedor específico do qual você deseja atualizar os dados.</p>
 
 ```
 $ 127.0.0.1:8000/update/id
 ```
 
-:round_pushpin: Delete
-Através deste metódo é possível fazer a remoção de um usuário, tem o funcionamento análogo ao do Update, sendo necessário passar a id do fornecedor específico do qual você deseja deletar os dados.
+:round_pushpin: Delete 
+<p>Através deste metódo é possível fazer a remoção de um usuário, tem o funcionamento análogo ao do Update, sendo necessário passar a id do fornecedor específico do qual você deseja deletar os dados.
+</p>
 
 ```
 $ 127.0.0.1:8000/delete/id
