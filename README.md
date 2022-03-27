@@ -31,21 +31,29 @@ $ git clone https://github.com/G-ilian/Desafio4Intelligence
 <p>Para uma melhor experiência ao executar a aplicação é recomendado a criação de um ambiente virtual (venv), que possibilitará isolar a aplicação e sua execução do nosso sistema operacional</p>
 <p>Para a criação e ativação da venv siga os seguintes comandos: </p>
 - Criação
-Obs: O nome da venv deve estar fora das aspas duplas 
+<p>Obs: O nome da venv deve estar fora das aspas duplas</p> 
+
 ```
-python -m venv "Nome da venv que você deseja criar"
+$ python -m venv "Nome da venv que você deseja criar"
 ```
+
 - Ativação
 Para windows(Lembrar sempre de verificar se está na raiz do projeto):
-1º Passo
+
+- Acessar a pasta venv
+
 ```
 $ cd venv
 ```
-2º Passo
+
+- Acessar Scripts
+
 ```
 $ cd Scripts
 ```
-3º passo
+
+- Ativar a venv
+
 ```
 $ activate
 ```
@@ -53,6 +61,7 @@ $ activate
 <p>
 Posteriormente a esta ativação da venv volte até a pasta de origem de nome 'Desagio_Backend_4Intelligence'.Será necessário para isso executar o seguinte código por duas vezes:
 </p>
+
 ```
 $ cd ..
 ```
@@ -64,9 +73,11 @@ $ source tutorial-env/bin/activate
 **Preparação**
 <p>Após termos feito a configuração e ativado nosso ambiente virtural, podemos então partir para a preparação para a execução do código</p>
 <p>Para isto é necessário fazer a instalação do pré requisitos que permitem a execução, esta instalação pode ser feita através do comando no terminal</p>
+
 ```
 $ pip install -r requirements.txt
 ```
 
 **Execução:**
+
 <p></p>
