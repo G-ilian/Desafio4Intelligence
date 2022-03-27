@@ -14,23 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include, re_path
+from django.urls import path, include
 from rest_framework import routers
-from Fornecedores.api.viewsets import FornecedoresViewSet, FornecedoresRead, FornecedoresCreate, FornecedoresUpdate, \
+from Fornecedores.api.viewsets import FornecedoresRead, FornecedoresCreate, FornecedoresUpdate, \
     FornecedoresDelete
 
 router = routers.DefaultRouter()
-# Registrando uma url de fornecedores, para ser atrelada a viewset
-router.register(r'fornecedores', FornecedoresViewSet)
+
 
 # Os paths adicionados são os endpoints que permitem realizar o CRUD na API
 
 urlpatterns = [
-    # Indicando que  a url antes incluída será utilizada.
     path('', include(router.urls)),
-    path('read', FornecedoresRead.as_view()),
-    path('create', FornecedoresCreate.as_view(), name='create'),
-    path('update/<int:id>/', FornecedoresUpdate.as_view()),
-    re_path('delete/<int:id>/', FornecedoresDelete.as_view(), name='FornecedorUpdate'),
-    path('admin/', admin.site.urls),
+    path(r'read', FornecedoresRead.as_view(),name='Read'),
+    path(r'create', FornecedoresCreate.as_view(), name='create'),
+    path(r'update/<str:id>/', FornecedoresUpdate.as_view(),name='FornecedorUpdate'),
+    path(r'delete/<str:id>/', FornecedoresDelete.as_view(),name="delete"),
+    path(r'admin/', admin.site.urls),
 ]
