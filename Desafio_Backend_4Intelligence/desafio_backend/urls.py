@@ -14,19 +14,23 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework import routers
-from Fornecedores.api.viewsets import FornecedoresViewSet
+from Fornecedores.api.viewsets import FornecedoresViewSet, FornecedoresRead, FornecedoresCreate, FornecedoresUpdate, \
+    FornecedoresDelete
 
-'''
-Configurando uma rota padrão url para fornecedores, essa está atrelado a uma viewset
-'''
 router = routers.DefaultRouter()
-#Registrando uma url de fornecedores, para ser atrelada a viewset
-router.register(r'fornecedores',FornecedoresViewSet)
+# Registrando uma url de fornecedores, para ser atrelada a viewset
+router.register(r'fornecedores', FornecedoresViewSet)
+
+# Os paths adicionados são os endpoints que permitem realizar o CRUD na API
 
 urlpatterns = [
-    #Indicando que  a url antes incluída será utilizada.
+    # Indicando que  a url antes incluída será utilizada.
     path('', include(router.urls)),
+    path('read', FornecedoresRead.as_view()),
+    path('create', FornecedoresCreate.as_view(), name='create'),
+    path('update/<int:id>/', FornecedoresUpdate.as_view()),
+    re_path('delete/<int:id>/', FornecedoresDelete.as_view(), name='FornecedorUpdate'),
     path('admin/', admin.site.urls),
 ]
