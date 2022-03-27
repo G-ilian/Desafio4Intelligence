@@ -80,4 +80,55 @@ $ pip install -r requirements.txt
 
 **Execução:**
 
-<p></p>
+<p>Após ter instalado todos os pré requisitos, podemos partir para a execução da API, para isto será necessário executar alguns comandos pelo terminal, estando na pasta raiz do projeto execute os seguinter códigos </p>
+
+Inicialmente: 
+
+```
+$ python manage.py makemigrations
+```
+Logo em seguida:
+
+```
+$ python manage.py migrate
+```
+
+Por fim: 
+
+```
+$ python manage.py runserver
+```
+
+<p>Após este processo aparecerá então um link de um servidor, para testar a API podemos usar de nosso própio navegador, ou seja, pegamos o link gerado em nosso terminal colamos em um navegador qualquer e iniciamos nossos testes.</p>
+
+:toolbox: Ferramentas
+
+<p>A Web API desenvolvida tem como principal funcionalidade fazer um CRUD completo, para isto foram criados 4 endpoints, para cada uma dessas operações, estes podem ser acessados através das seguintes urls.</p>
+
+:round_pushpin: Create
+Através deste metódo é possível criar um fornecedor, após a criação do mesmo bastar dar um POST, que ele já será incluído.
+
+```
+$ 127.0.0.1:8000/create
+```
+
+:round_pushpin: Read
+Através deste metódo é possível listar todos os fornecedores que estão cadastrados.
+
+```
+$ 127.0.0.1:8000/read
+```
+
+:round_pushpin: Update
+Através deste metódo é possível fazer a atualização de todos os campos, ou de somente um campo de um fornecedor. Lembrando que este metódo exige a presença do id do fornecedor específico do qual você deseja atualizar os dados.
+
+```
+$ 127.0.0.1:8000/update/id
+```
+
+:round_pushpin: Delete
+Através deste metódo é possível fazer a remoção de um usuário, tem o funcionamento análogo ao do Update, sendo necessário passar a id do fornecedor específico do qual você deseja deletar os dados.
+
+```
+$ 127.0.0.1:8000/delete/id
+```
