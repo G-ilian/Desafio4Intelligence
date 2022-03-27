@@ -135,11 +135,11 @@ $ 127.0.0.1:8000/delete/id
 ```
 
 ### 📦 Desenvolvimento
-Devido a ser minha primeira experiência com API/Web APIS optei por deixar meus pacotes e pastas com as estruturas mais simplificadas o possível, bem como meus códigos de uma maneira mais simplificada. Portanto optei por organizar os arquivos da seguinte maneira:
+<p>Devido a ser minha primeira experiência com API/Web APIS optei por deixar meus pacotes e pastas com as estruturas mais simplificadas o possível, bem como meus códigos de uma maneira mais simplificada. Portanto optei por organizar os arquivos da seguinte maneira:</p>
 
 📂 Desafio_Backend_4Intelligence/
     📂desafio_backend/
-        📄_init_.py
+        📄__init__.py
         📄asgi.py
         📄settings.py
         📄urls.py
@@ -162,4 +162,4 @@ Devido a ser minha primeira experiência com API/Web APIS optei por deixar meus 
 
 ## ✒️ Autor
 
-***Gabriel Ilian Fonseca Barboza** - [Gabriel](https://github.com/G-ilian)
+***Gabriel Ilian Fonseca Barboza*** - [Gabriel](https://github.com/G-ilian)
