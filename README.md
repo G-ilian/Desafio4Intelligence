@@ -160,6 +160,9 @@ $ 127.0.0.1:8000/delete/id
             📄tests.py
             📄views.py
 
+<p>Fiz um pequeno vídeo que mostra a API em funcionamento: </p>
+
+➡️ [Api em funcionamento](https://www.youtube.com/watch?v=8RC2zyM3Qi4&t=7s)
 
 ## ✒️ Autor
 
